@@ -25,7 +25,7 @@ public class TestReturn {
                 try {
                     // 模拟处理消息
                     Thread.sleep(1000);
-                    System.out.println("处理消息：" + message);
+                    System.out.println("处理消息01：" + message);
 
                     // 模拟处理失败的情况，提前结束任务
                     if (message.getId() % 2 == 0) {
@@ -33,6 +33,7 @@ public class TestReturn {
                         // 提前结束任务
                         return;
                     }
+                    System.out.println("处理消息02：" + message);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
