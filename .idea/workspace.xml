@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb22a3be-2b26-45aa-afc9-16db07ec653e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/concurrency/countDownLatch/src/TestReturn.java" afterDir="false" />
+    <list default="true" id="eb22a3be-2b26-45aa-afc9-16db07ec653e" name="Changes" comment="feat:优化">
+      <change afterPath="$PROJECT_DIR$/protocol/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protocol/protobuf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protocol/protobuf/src/main/java/com/shield/protocol/TransactionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protocol/protobuf/src/main/proto/Transaction.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protocol/protobuf/src/test/java/com/shield/protocol/test/ProtobufTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/countDownLatch/TestReturn$Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/countDownLatch/TestReturn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +29,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="false" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2POlEpjeCFQu7PGsxmIULmW2B0D" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,26 +52,42 @@
   "keyToString": {
     "Application.Main.executor": "Debug",
     "Application.TestReturn.executor": "Run",
+    "JUnit.ApiTest.executor": "Coverage",
+    "JUnit.ProtobufTest.testProtobuf.executor": "Debug",
+    "Maven.protobuf [compile].executor": "Run",
+    "Maven.protobuff [compile].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/code/github/java-ez",
+    "last_opened_file_path": "G:/code/github/java-ez/protocol/protobuf/src/main/java/com.sheild.protocol",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15234375",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.TestReturn">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\code\github\java-ez\protocol\protobuf\src\main\java\com.sheild.protocol" />
+      <recent name="G:\code\github\java-ez\protocol\protobuf\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\code\github\java-ez\protocol\protobuf\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ProtobufTest.testProtobuf">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="countDownLatch" />
@@ -100,10 +133,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProtobufTest.testProtobuf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="protobuf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shield.protocol.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shield.protocol.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shield.protocol.test.ProtobufTest" />
+      <option name="METHOD_NAME" value="testProtobuf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestReturn" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ProtobufTest.testProtobuf" />
         <item itemvalue="JUnit.ApiTest" />
         <item itemvalue="JUnit.ApiTest.test" />
       </list>
@@ -126,12 +174,30 @@
       <option name="presentableId" value="Default" />
       <updated>1683335904591</updated>
       <workItem from="1683335907880" duration="2721000" />
-      <workItem from="1712715385236" duration="232000" />
+      <workItem from="1712715385236" duration="716000" />
+      <workItem from="1713520391632" duration="933000" />
+      <workItem from="1713868186769" duration="822000" />
+      <workItem from="1713869014905" duration="766000" />
+      <workItem from="1713869785635" duration="134000" />
+      <workItem from="1713869923691" duration="929000" />
     </task>
+    <task id="LOCAL-00001" summary="feat:优化">
+      <option name="closed" value="true" />
+      <created>1712715824763</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712715824763</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat:优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:优化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
