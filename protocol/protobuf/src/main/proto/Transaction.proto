@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = false;
+option java_package = "com.shield.protocol";
+option java_outer_classname = "TransactionProto";
+
+message Transaction{
+  int32 chainId = 1;
+  string tokenId = 2;
+  string hash = 3;
+  string blockHash = 4;
+  string blockNumber = 5;
+  string blockTime = 6;
+  string fee = 7;
+  string fromAddress = 8;
+  string toAddress = 9;
+  string status = 10;
+  int32 index = 11;
+  int32 type = 12;
+  string  amount = 13;
+}
