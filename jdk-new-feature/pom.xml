@@ -9,14 +9,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>util</artifactId>
+    <artifactId>jdk-new-feature</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>oshi</module>
-        <module>hutool</module>
-        <module>aviator</module>
-        <module>drools</module>
-        <module>liteflow</module>
+        <module>jdk8</module>
     </modules>
 
     <properties>
@@ -24,13 +20,5 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
 </project>

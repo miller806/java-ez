@@ -5,19 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.shield</groupId>
-        <artifactId>java-ez</artifactId>
+        <artifactId>util</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>util</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>oshi</module>
-        <module>hutool</module>
-        <module>aviator</module>
-        <module>drools</module>
-        <module>liteflow</module>
-    </modules>
+    <artifactId>drools</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -26,11 +18,21 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>7.59.0.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-compiler</artifactId>
+            <version>7.59.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-decisiontables</artifactId>
+            <version>7.59.0.Final</version>
+        </dependency>
+
     </dependencies>
 
 </project>

@@ -10,6 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>util</module>
+        <module>algorithm</module>
+        <module>jdk-new-feature</module>
+        <module>aggregation</module>
     </modules>
 
     <properties>
@@ -21,7 +24,18 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.8.16</version>
+            <version>5.8.22</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
